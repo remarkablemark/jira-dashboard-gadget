@@ -9,8 +9,8 @@
     "@atlaskit/form": "^9.0.7",
     "@atlaskit/textfield": "^6.0.0",
     "@forge/bridge": "3.3.0",
-    "react": "^16",
-    "react-dom": "^16"
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "react-scripts": "^5.0.1"

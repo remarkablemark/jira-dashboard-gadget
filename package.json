@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "cd static/jira-dashboard-gadget; npm run build; cd -",
-    "deploy": "npm run build && forge deploy",
-    "install": "forge install",
-    "login": "forge login"
+    "clean": "rm -rf static/jira-dashboard-gadget/build",
+    "deploy": "npm run build && forge deploy && forge install",
+    "login": "forge login",
+    "lint": "npm run clean && eslint .",
+    "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
     "@forge/resolver": "1.5.28"
@@ -15,7 +17,10 @@
   "devDependencies": {
     "@forge/cli": "^7.0.4",
     "eslint": "^8.56.0",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.2.5"
   },
   "license": "MIT"
 }

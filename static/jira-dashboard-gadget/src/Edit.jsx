@@ -1,10 +1,9 @@
-import React from 'react';
 import Form, { Field } from '@atlaskit/form';
 import TextField from '@atlaskit/textfield';
 import Button, { ButtonGroup } from '@atlaskit/button';
 import { view } from '@forge/bridge';
 
-function Edit() {
+export default function Edit() {
   const onSubmit = (formData) => view.submit(formData);
 
   return (
@@ -17,15 +16,17 @@ function Edit() {
           <Field name="description" label="Description">
             {({ fieldProps }) => <TextField {...fieldProps} />}
           </Field>
-          <br/>
+          <br />
           <ButtonGroup>
-            <Button type="submit" isDisabled={submitting}>Save</Button>
-            <Button appearance="subtle" onClick={view.close}>Cancel</Button>
+            <Button type="submit" isDisabled={submitting}>
+              Save
+            </Button>
+            <Button appearance="subtle" onClick={view.close}>
+              Cancel
+            </Button>
           </ButtonGroup>
         </form>
       )}
     </Form>
   );
 }
-
-export default Edit;

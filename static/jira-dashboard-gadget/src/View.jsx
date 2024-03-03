@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { view, invoke } from '@forge/bridge';
 
-function View() {
+export default function View() {
   const [context, setContext] = useState();
   const [data, setData] = useState(null);
 
@@ -23,5 +23,3 @@ function View() {
     </div>
   );
 }
-
-export default View;
