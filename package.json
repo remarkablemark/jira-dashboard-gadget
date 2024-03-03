@@ -1,0 +1,14 @@
+{
+  "name": "jira-dashboard-gadget-custom-ui",
+  "version": "1.0.38",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "dependencies": {
+    "@forge/resolver": "1.5.28"
+  }
+}
