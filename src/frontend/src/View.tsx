@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { view, invoke } from '@forge/bridge';
+import type { FullContext } from './types';
 
 export default function View() {
-  const [context, setContext] = useState();
-  const [data, setData] = useState(null);
+  const [context, setContext] = useState<FullContext>();
+  const [data, setData] = useState<string>('');
 
   useEffect(() => {
-    invoke('getText', { example: 'my-invoke-variable' }).then(setData);
+    invoke<string>('getText', { example: 'my-invoke-variable' }).then(setData);
   }, []);
 
   useEffect(() => {

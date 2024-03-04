@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import { view } from '@forge/bridge';
 import View from './View';
 import Edit from './Edit';
+import type { FullContext } from './types';
 
 export default function App() {
-  const [context, setContext] = useState();
+  const [context, setContext] = useState<FullContext>();
 
   useEffect(() => {
     view.getContext().then(setContext);

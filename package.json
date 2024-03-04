@@ -10,7 +10,8 @@
     "deploy": "npm run build && forge deploy && forge install",
     "login": "forge login",
     "lint": "npm run clean && eslint .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "lint:tsc": "npm run lint:tsc --workspace=frontend"
   },
   "dependencies": {
     "@forge/resolver": "1.5.28"

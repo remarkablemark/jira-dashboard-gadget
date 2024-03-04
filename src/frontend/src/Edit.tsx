@@ -3,8 +3,15 @@ import TextField from '@atlaskit/textfield';
 import Button, { ButtonGroup } from '@atlaskit/button';
 import { view } from '@forge/bridge';
 
+interface FormData {
+  name: string;
+  description: string;
+}
+
 export default function Edit() {
-  const onSubmit = (formData) => view.submit(formData);
+  function onSubmit(formData: FormData) {
+    view.submit(formData);
+  }
 
   return (
     <Form onSubmit={onSubmit}>
