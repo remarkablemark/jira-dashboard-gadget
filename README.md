@@ -1,4 +1,4 @@
-# Forge Hello World
+# Jira Dashboard Gadget
 
 This project contains a Forge app written in JavaScript that displays `Hello World!` in a [Jira dashboard gadget](https://developer.atlassian.com/platform/forge/manifest-reference/modules/jira-dashboard-gadget/).
 

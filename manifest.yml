@@ -1,8 +1,8 @@
 modules:
   jira:dashboardGadget:
     - key: jira-dashboard-gadget
-      title: jira-dashboard-gadget
-      description: A hello world dashboard gadget.
+      title: Jira Dashboard Gadget
+      description: Jira dashboard gadget.
       thumbnail: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
       resource: main
       resolver:
