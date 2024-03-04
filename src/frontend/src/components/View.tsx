@@ -1,17 +1,13 @@
-import { invoke, view } from '@forge/bridge';
+import { invoke } from '@forge/bridge';
 import { useEffect, useState } from 'react';
-import type { FullContext } from 'src/types';
+import { useForgeContext } from 'src/hooks';
 
 export default function View() {
-  const [context, setContext] = useState<FullContext>();
+  const context = useForgeContext();
   const [data, setData] = useState<string>('');
 
   useEffect(() => {
     invoke<string>('getText', { example: 'my-invoke-variable' }).then(setData);
-  }, []);
-
-  useEffect(() => {
-    view.getContext().then(setContext);
   }, []);
 
   if (!context || !data) {

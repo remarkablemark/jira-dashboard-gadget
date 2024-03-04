@@ -1,16 +1,10 @@
-import { view } from '@forge/bridge';
-import { useEffect, useState } from 'react';
-import type { FullContext } from 'src/types';
+import { useForgeContext } from 'src/hooks';
 
 import Edit from './Edit';
 import View from './View';
 
 export default function App() {
-  const [context, setContext] = useState<FullContext>();
-
-  useEffect(() => {
-    view.getContext().then(setContext);
-  }, []);
+  const context = useForgeContext();
 
   if (!context) {
     return 'Loading...';
