@@ -5,8 +5,8 @@
   "author": "Mark <mark@remarkablemark.org>",
   "main": "index.js",
   "scripts": {
-    "build": "cd static/jira-dashboard-gadget; npm run build; cd -",
-    "clean": "rm -rf static/jira-dashboard-gadget/build",
+    "build": "npm run build --workspace=frontend",
+    "clean": "npm run clean --workspace=frontend",
     "deploy": "npm run build && forge deploy && forge install",
     "login": "forge login",
     "lint": "npm run clean && eslint .",
@@ -23,6 +23,9 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "prettier": "3.2.5"
   },
+  "workspaces": [
+    "./src/*"
+  ],
   "private": true,
   "license": "MIT"
 }

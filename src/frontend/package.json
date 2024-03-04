@@ -1,8 +1,14 @@
 {
-  "name": "jira-dashboard-gadget-custom-ui-static",
-  "version": "0.1.32",
+  "name": "frontend",
+  "version": "1.0.0-alpha",
   "private": true,
   "homepage": ".",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "clean": "rm -rf build"
+  },
   "dependencies": {
     "@atlaskit/button": "^17.3.2",
     "@atlaskit/css-reset": "^6.6.2",
@@ -14,11 +20,6 @@
   },
   "devDependencies": {
     "react-scripts": "^5.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [

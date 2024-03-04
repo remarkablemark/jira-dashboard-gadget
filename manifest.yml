@@ -14,7 +14,7 @@ modules:
       handler: index.handler
 resources:
   - key: main
-    path: static/jira-dashboard-gadget/build
+    path: src/frontend/build
 permissions:
   content:
     styles:
