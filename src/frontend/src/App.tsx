@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
 import { view } from '@forge/bridge';
-import View from './View';
+import { useEffect, useState } from 'react';
+
 import Edit from './Edit';
 import type { FullContext } from './types';
+import View from './View';
 
 export default function App() {
   const [context, setContext] = useState<FullContext>();

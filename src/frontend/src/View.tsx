@@ -1,5 +1,6 @@
+import { invoke, view } from '@forge/bridge';
 import { useEffect, useState } from 'react';
-import { view, invoke } from '@forge/bridge';
+
 import type { FullContext } from './types';
 
 export default function View() {

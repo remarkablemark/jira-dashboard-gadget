@@ -1,6 +1,6 @@
+import Button, { ButtonGroup } from '@atlaskit/button';
 import Form, { Field } from '@atlaskit/form';
 import TextField from '@atlaskit/textfield';
-import Button, { ButtonGroup } from '@atlaskit/button';
 import { view } from '@forge/bridge';
 
 interface FormData {
