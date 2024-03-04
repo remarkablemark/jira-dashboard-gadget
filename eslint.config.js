@@ -3,6 +3,7 @@ const eslint = require('@eslint/js');
 const globals = require('globals');
 const prettier = require('eslint-plugin-prettier');
 const react = require('eslint-plugin-react');
+const reactHooks = require('eslint-plugin-react-hooks');
 const simpleImportSort = require('eslint-plugin-simple-import-sort');
 const tseslint = require('typescript-eslint');
 
@@ -19,6 +20,7 @@ config.push({
     },
   },
   plugins: {
+    'react-hooks': reactHooks,
     'simple-import-sort': simpleImportSort,
     prettier,
     react,
