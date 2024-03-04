@@ -54,3 +54,7 @@ npx forge tunnel
 ## Resources
 
 - [Manage your apps](https://developer.atlassian.com/platform/forge/manage-your-apps/)
+
+## License
+
+[MIT](LICENSE)
