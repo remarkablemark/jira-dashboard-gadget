@@ -1,8 +1,8 @@
 import { view } from '@forge/bridge';
 import { useEffect, useState } from 'react';
+import type { FullContext } from 'src/types';
 
 import Edit from './Edit';
-import type { FullContext } from './types';
 import View from './View';
 
 export default function App() {
