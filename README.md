@@ -2,31 +2,38 @@
 
 This project contains a Forge app written in JavaScript that displays `Hello World!` in a [Jira dashboard gadget](https://developer.atlassian.com/platform/forge/manifest-reference/modules/jira-dashboard-gadget/).
 
-See [developer.atlassian.com/platform/forge/](https://developer.atlassian.com/platform/forge) for documentation and tutorials explaining Forge.
+See [documentation and tutorials](https://developer.atlassian.com/platform/forge) explaining Forge.
 
-## Requirements
+## Prerequisites
 
-See [Set up Forge](https://developer.atlassian.com/platform/forge/set-up-forge/) for instructions to get set up.
+[Set up Forge](https://developer.atlassian.com/platform/forge/set-up-forge/).
 
 ## Quick Start
 
-Install dependecies:
+Clone the repository:
+
+```sh
+git clone https://github.com/remarkablemark/jira-dashboard-gadget.git
+cd jira-dashboard-gadget
+```
+
+Install the dependecies:
 
 ```sh
 npm install
 ```
 
-Login to your Atlassian account:
+Log in to your Atlassian account:
 
 ```sh
 npm run login
 ```
 
-Modify your app frontend by editing the `src/frontend/index.jsx` file.
+Modify the frontend app by editing the `src/frontend/src/index.tsx` file.
 
-Modify your app backend by editing the `src/resolvers/index.js` file to define resolver functions. See [Forge resolvers](https://developer.atlassian.com/platform/forge/runtime-reference/custom-ui-resolver/) for documentation on resolver functions.
+Modify the backend app by editing the `src/resolvers/index.js` file to define resolver functions. See [Forge resolvers](https://developer.atlassian.com/platform/forge/runtime-reference/custom-ui-resolver/) for documentation on resolver functions.
 
-Build, deploy, and install your app in an Atlassian site by running:
+Build, deploy, and install your app in an Atlassian site:
 
 ```sh
 npm run deploy
