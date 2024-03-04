@@ -16,5 +16,9 @@ export default function App() {
     return 'Loading...';
   }
 
-  return context.extension.entryPoint === 'edit' ? <Edit /> : <View />;
+  if (context.extension.entryPoint === 'edit') {
+    return <Edit />;
+  }
+
+  return <View />;
 }
