@@ -14,7 +14,7 @@ modules:
       handler: index.handler
 resources:
   - key: main
-    path: src/frontend/build
+    path: src/frontend/dist
 permissions:
   content:
     styles:
