@@ -20,7 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "19.0.3",
     "@commitlint/config-conventional": "19.0.3",
-    "@forge/cli": "7.0.4",
+    "@forge/cli": "7.0.5",
     "eslint": "8.57.0",
     "eslint-plugin-prettier": "5.1.3",
     "eslint-plugin-simple-import-sort": "12.0.0",
