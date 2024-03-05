@@ -32,6 +32,8 @@ config.push({
     'prettier/prettier': 'error',
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
 });
 

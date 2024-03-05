@@ -9,7 +9,7 @@ export function useForgeInvoke<T>(
 
   useEffect(() => {
     invoke<T>(functionKey, invokePayload).then(setData);
-  }, []);
+  }, [functionKey, invokePayload]);
 
   return data;
 }
