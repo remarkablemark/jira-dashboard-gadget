@@ -10,7 +10,7 @@
     "start": "vite --open"
   },
   "dependencies": {
-    "@atlaskit/button": "17.6.2",
+    "@atlaskit/button": "17.7.0",
     "@atlaskit/css-reset": "6.6.2",
     "@atlaskit/form": "9.0.10",
     "@atlaskit/textfield": "6.0.1",
