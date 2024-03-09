@@ -3,7 +3,6 @@
   "version": "1.0.0-alpha",
   "description": "Jira dashboard gadget.",
   "author": "Mark <mark@remarkablemark.org>",
-  "main": "index.js",
   "scripts": {
     "build": "npm run build --workspace=frontend",
     "clean": "npm run clean --workspace=frontend",
@@ -13,9 +12,6 @@
     "lint:tsc": "npm run lint:tsc --workspace=frontend",
     "login": "forge login",
     "prepare": "husky"
-  },
-  "dependencies": {
-    "@forge/resolver": "1.5.28"
   },
   "devDependencies": {
     "@commitlint/cli": "19.0.3",
@@ -29,6 +25,7 @@
     "prettier": "3.2.5"
   },
   "workspaces": [
+    "src/backend",
     "src/frontend"
   ],
   "private": true,
