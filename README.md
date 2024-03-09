@@ -6,7 +6,7 @@ See [documentation and tutorials](https://developer.atlassian.com/platform/forge
 
 ## Prerequisites
 
-[Set up Forge](https://developer.atlassian.com/platform/forge/set-up-forge/).
+[Create a Forge app](https://developer.atlassian.com/platform/forge/set-up-forge/) and replace `app.id` in [manifest.yml](manifest.yml).
 
 ## Quick Start
 
