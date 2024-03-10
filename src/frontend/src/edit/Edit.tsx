@@ -1,37 +1,27 @@
 import Button, { ButtonGroup } from '@atlaskit/button';
 import Form, { Field } from '@atlaskit/form';
 import TextField from '@atlaskit/textfield';
-import { view } from '@forge/bridge';
 
-import { useForgeContext } from '../hooks';
+import type { FormValues, View } from '../types';
 
-interface FormValues {
-  name: string;
-  description: string;
+interface Props {
+  formValues: FormValues;
+  view: View;
 }
 
-export default function Edit() {
-  const context = useForgeContext();
-
-  if (!context) {
-    return 'Loading...';
-  }
-
-  const { name, description } = context.extension
-    .gadgetConfiguration as FormValues;
-
+export default function Edit(props: Props) {
   return (
-    <Form<FormValues> onSubmit={view.submit}>
+    <Form<FormValues> onSubmit={props.view.submit}>
       {({ formProps, submitting }) => (
         <form {...formProps}>
-          <Field name="name" label="Name" defaultValue={name}>
+          <Field name="name" label="Name" defaultValue={props.formValues.name}>
             {({ fieldProps }) => <TextField {...fieldProps} />}
           </Field>
 
           <Field
             name="description"
             label="Description"
-            defaultValue={description}
+            defaultValue={props.formValues.description}
           >
             {({ fieldProps }) => <TextField {...fieldProps} />}
           </Field>
@@ -43,7 +33,7 @@ export default function Edit() {
               Save
             </Button>
 
-            <Button appearance="subtle" onClick={view.close}>
+            <Button onClick={() => props.view.submit(props.formValues)}>
               Cancel
             </Button>
           </ButtonGroup>

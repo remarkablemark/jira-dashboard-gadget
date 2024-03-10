@@ -1,6 +1,6 @@
+import Edit from '../edit';
 import { useForgeContext } from '../hooks';
-import Edit from './Edit';
-import View from './View';
+import View from '../view';
 
 export default function App() {
   const context = useForgeContext();
@@ -9,9 +9,5 @@ export default function App() {
     return 'Loading...';
   }
 
-  if (context.extension.entryPoint === 'edit') {
-    return <Edit />;
-  }
-
-  return <View />;
+  return context.extension.entryPoint === 'edit' ? <Edit /> : <View />;
 }
