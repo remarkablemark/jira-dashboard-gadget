@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run build --workspace=frontend",
     "clean": "npm run clean --workspace=frontend",
-    "deploy": "npm run build && forge deploy && forge install",
+    "deploy": "npm run build && forge deploy && forge install --upgrade",
     "lint": "npm run clean && eslint .",
     "lint:fix": "npm run lint -- --fix",
     "lint:forge": "forge lint",
