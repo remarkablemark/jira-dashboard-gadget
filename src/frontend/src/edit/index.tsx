@@ -1,3 +1,4 @@
+import Spinner from '@atlaskit/spinner';
 import { view } from '@forge/bridge';
 
 import { useForgeContext } from '../hooks';
@@ -7,7 +8,7 @@ export default function EditContext() {
   const context = useForgeContext();
 
   if (!context) {
-    return 'Loading...';
+    return <Spinner label="Loading" />;
   }
 
   return (

@@ -1,3 +1,5 @@
+import Spinner from '@atlaskit/spinner';
+
 import { useForgeContext, useForgeInvoke } from '../hooks';
 import View from './View';
 
@@ -8,7 +10,7 @@ export default function ViewContext() {
   });
 
   if (!context || !text) {
-    return 'Loading...';
+    return <Spinner label="Loading" />;
   }
 
   return (
