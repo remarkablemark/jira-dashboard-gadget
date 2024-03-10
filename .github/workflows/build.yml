@@ -18,8 +18,14 @@ jobs:
       - name: Install dependencies
         run: npm ci --prefer-offline
 
-      - name: Run ESLint
+      - name: Disable Forge telemetry
+        run: npx forge settings set usage-analytics false
+
+      - name: Lint codebase
         run: npm run lint
+        env:
+          FORGE_API_TOKEN: ${{ secrets.FORGE_API_TOKEN }}
+          FORGE_EMAIL: ${{ secrets.FORGE_EMAIL }}
 
       - name: Type check
         run: npm run lint:tsc
