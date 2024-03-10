@@ -1,6 +1,7 @@
 import { view } from '@forge/bridge';
 import { useEffect, useState } from 'react';
-import type { FullContext } from 'src/types';
+
+import type { FullContext } from '../types';
 
 export function useForgeContext() {
   const [context, setContext] = useState<FullContext | undefined>();

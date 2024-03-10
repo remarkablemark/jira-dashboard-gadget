@@ -1,5 +1,4 @@
-import { useForgeContext } from 'src/hooks';
-
+import { useForgeContext } from '../hooks';
 import Edit from './Edit';
 import View from './View';
 

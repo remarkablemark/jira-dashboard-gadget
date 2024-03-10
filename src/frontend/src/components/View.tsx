@@ -1,4 +1,4 @@
-import { useForgeContext, useForgeInvoke } from 'src/hooks';
+import { useForgeContext, useForgeInvoke } from '../hooks';
 
 export default function View() {
   const context = useForgeContext();

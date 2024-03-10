@@ -2,7 +2,8 @@ import Button, { ButtonGroup } from '@atlaskit/button';
 import Form, { Field } from '@atlaskit/form';
 import TextField from '@atlaskit/textfield';
 import { view } from '@forge/bridge';
-import { useForgeContext } from 'src/hooks';
+
+import { useForgeContext } from '../hooks';
 
 interface FormValues {
   name: string;
