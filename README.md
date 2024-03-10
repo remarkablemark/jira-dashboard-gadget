@@ -31,7 +31,7 @@ npm run login
 
 Modify the frontend app by editing the `src/frontend/src/index.tsx` file.
 
-Modify the backend app by editing the `src/resolvers/index.js` file to define resolver functions. See [Forge resolvers](https://developer.atlassian.com/platform/forge/runtime-reference/custom-ui-resolver/) for documentation on resolver functions.
+Modify the backend app by editing the `src/backend/index.js` file to define resolver functions. See [Forge resolvers](https://developer.atlassian.com/platform/forge/runtime-reference/custom-ui-resolver/) for documentation on resolver functions.
 
 Build, deploy, and install your app in an Atlassian site:
 
