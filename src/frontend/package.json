@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@atlaskit/button": "18.4.0",
-    "@atlaskit/css-reset": "6.9.1",
+    "@atlaskit/css-reset": "6.9.2",
     "@atlaskit/form": "10.4.7",
     "@atlaskit/spinner": "16.2.0",
     "@atlaskit/textfield": "6.4.2",
