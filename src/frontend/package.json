@@ -14,7 +14,7 @@
     "@atlaskit/css-reset": "6.9.2",
     "@atlaskit/form": "10.4.7",
     "@atlaskit/spinner": "16.2.0",
-    "@atlaskit/textfield": "6.4.2",
+    "@atlaskit/textfield": "6.4.3",
     "@forge/bridge": "3.5.0",
     "react": "18",
     "react-dom": "18"
