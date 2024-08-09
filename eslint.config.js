@@ -1,4 +1,5 @@
 // @ts-check
+/* eslint-disable @typescript-eslint/no-require-imports */
 const eslint = require('@eslint/js');
 const globals = require('globals');
 const prettier = require('eslint-plugin-prettier');
