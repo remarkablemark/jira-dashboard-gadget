@@ -1,18 +1,20 @@
 {
-  "name": "jira-dashboard-gadget-custom-ui",
+  "name": "jira-dashboard-gadget",
   "version": "1.0.0-alpha",
   "description": "Jira dashboard gadget.",
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
     "build": "npm run build --workspace=frontend",
     "clean": "npm run clean --workspace=frontend",
-    "deploy": "npm run build && forge deploy && forge install --upgrade",
+    "deploy": "npm run build && npm test && forge deploy && forge install --upgrade",
     "lint": "eslint . && npm run build && npm run lint:forge",
     "lint:fix": "eslint . --fix",
     "lint:forge": "forge lint",
     "lint:tsc": "npm run lint:tsc --workspace=frontend",
     "login": "forge login",
-    "prepare": "husky"
+    "prepare": "husky",
+    "storybook": "npm run storybook --prefix=src/storybook",
+    "test": "npm run test:ci --workspace=frontend"
   },
   "devDependencies": {
     "@commitlint/cli": "19.6.0",

@@ -38,6 +38,9 @@ jobs:
       - name: Build app
         run: npm run build
 
+      - name: Run tests
+        run: npm test
+
       - name: Disable Forge telemetry
         run: npx forge settings set usage-analytics false
 

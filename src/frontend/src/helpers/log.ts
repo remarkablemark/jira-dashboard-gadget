@@ -1,9 +1,11 @@
 /* eslint-disable no-console */
-const NAME = `[${import.meta.env.VITE_APP_NAME}@${import.meta.env.VITE_APP_VERSION}]`;
+import { NAME, VERSION } from '../env';
 
-const error = console.error.bind(null, NAME);
-const info = console.info.bind(null, NAME);
-const warn = console.warn.bind(null, NAME);
+const PREFIX = `[${NAME}@${VERSION}]`;
+
+const error = console.error.bind(null, PREFIX);
+const info = console.info.bind(null, PREFIX);
+const warn = console.warn.bind(null, PREFIX);
 
 export const log = {
   error,

@@ -1,13 +1,16 @@
-import '@atlaskit/css-reset';
+if (process.env.NODE_ENV !== 'test') {
+  import('@atlaskit/css-reset');
+}
 
 import { StrictMode } from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import App from './app';
 
-render(
+export const root = createRoot(document.getElementById('root')!);
+
+root.render(
   <StrictMode>
     <App />
   </StrictMode>,
-  document.getElementById('root'),
 );
