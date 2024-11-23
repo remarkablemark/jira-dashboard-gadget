@@ -1,5 +1,7 @@
 # Jira Dashboard Gadget
 
+[![build](https://github.com/remarkablemark/jira-dashboard-gadget/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/jira-dashboard-gadget/actions/workflows/build.yml)
+
 This project contains a Forge app written in JavaScript that displays `Hello World!` in a [Jira dashboard gadget](https://developer.atlassian.com/platform/forge/manifest-reference/modules/jira-dashboard-gadget/).
 
 See [documentation and tutorials](https://developer.atlassian.com/platform/forge) explaining Forge.
