@@ -1,3 +1,4 @@
+# https://developer.atlassian.com/platform/forge/manifest-reference/
 modules:
   jira:dashboardGadget:
     - key: jira-dashboard-gadget
@@ -12,12 +13,17 @@ modules:
   function:
     - key: resolver
       handler: index.handler
+
 resources:
   - key: main
     path: src/frontend/dist
+
 permissions:
   content:
     styles:
       - unsafe-inline
+
 app:
   id: ari:cloud:ecosystem::app/f2c63504-b55d-4aaf-96d8-604d474df1d6
+  runtime:
+    name: nodejs20.x
