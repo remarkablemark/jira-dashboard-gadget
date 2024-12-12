@@ -5,6 +5,7 @@
 import '@testing-library/jest-dom';
 
 jest.mock('@forge/bridge', () => ({
+  invoke: jest.fn().mockResolvedValue(undefined),
   view: {
     getContext: jest.fn().mockResolvedValue(undefined),
     submit: jest.fn(),
@@ -12,3 +13,7 @@ jest.mock('@forge/bridge', () => ({
 }));
 
 jest.mock('../src/env');
+
+afterEach(() => {
+  jest.clearAllMocks();
+});
