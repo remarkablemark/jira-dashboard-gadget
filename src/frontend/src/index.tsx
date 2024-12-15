@@ -1,3 +1,4 @@
+/* istanbul ignore next */
 if (process.env.NODE_ENV !== 'test') {
   import('@atlaskit/css-reset');
 }
