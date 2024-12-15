@@ -11,7 +11,7 @@ interface Props {
 
 export default function Edit(props: Props) {
   return (
-    <Form<FormValues> onSubmit={props.view.submit}>
+    <Form<FormValues> onSubmit={(event) => props.view.submit(event)}>
       {({ formProps, submitting }) => (
         <form {...formProps}>
           <Field name="name" label="Name" defaultValue={props.formValues.name}>

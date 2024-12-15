@@ -14,6 +14,7 @@ export function useFormValues() {
     }
 
     const data = context.extension.gadgetConfiguration;
+
     for (const key in data) {
       if (typeof data[key] === 'string') {
         data[key] = decode(data[key]);

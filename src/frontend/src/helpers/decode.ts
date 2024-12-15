@@ -7,8 +7,10 @@ import { log } from './log';
  * @returns - Decoded string.
  */
 export function decode(text: string) {
-  if (typeof text !== 'string') {
-    log.error(`Invalid string: ${text}`);
+  if (typeof text === 'string') {
+    return text.replaceAll('&gt;', '>').replaceAll('&lt;', '<');
   }
-  return text.replaceAll('&gt;', '>').replaceAll('&lt;', '<');
+
+  log.error(`Invalid string: ${text}`);
+  return text;
 }
