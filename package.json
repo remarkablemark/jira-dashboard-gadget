@@ -22,7 +22,7 @@
     "@eslint/compat": "1.2.5",
     "@forge/cli": "10.13.2",
     "eslint": "9.18.0",
-    "eslint-plugin-prettier": "5.2.2",
+    "eslint-plugin-prettier": "5.2.3",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "globals": "15.14.0",
     "husky": "9.1.7",
