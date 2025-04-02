@@ -19,7 +19,7 @@
   "devDependencies": {
     "@commitlint/cli": "19.8.0",
     "@commitlint/config-conventional": "19.8.0",
-    "@eslint/compat": "1.2.7",
+    "@eslint/compat": "1.2.8",
     "@forge/cli": "11.2.0",
     "eslint": "9.23.0",
     "eslint-plugin-prettier": "5.2.5",
