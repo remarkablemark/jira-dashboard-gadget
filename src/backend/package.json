@@ -2,6 +2,6 @@
   "name": "backend",
   "private": true,
   "dependencies": {
-    "@forge/resolver": "1.6.10"
+    "@forge/resolver": "1.6.11"
   }
 }
