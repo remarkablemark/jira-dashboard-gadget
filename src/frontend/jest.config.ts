@@ -10,6 +10,9 @@ const config: JestConfigWithTsJest = {
       statements: 100,
     },
   },
+  moduleNameMapper: {
+    '\\.css$': 'identity-obj-proxy',
+  },
   modulePathIgnorePatterns: ['<rootDir>/src/env'],
   preset: 'ts-jest',
   reporters:
