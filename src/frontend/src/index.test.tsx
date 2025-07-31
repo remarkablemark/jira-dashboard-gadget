@@ -14,6 +14,6 @@ it('renders without crashing', async () => {
     root.unmount();
   });
 
-  expect(getElementByIdSpy).toBeCalledTimes(1);
-  expect(getElementByIdSpy).toBeCalledWith('root');
+  expect(getElementByIdSpy).toHaveBeenCalledTimes(1);
+  expect(getElementByIdSpy).toHaveBeenCalledWith('root');
 });
