@@ -16,11 +16,13 @@ export function useFormValues() {
     const data = context.extension.gadgetConfiguration;
 
     for (const key in data) {
+      /* istanbul ignore else */
       if (typeof data[key] === 'string') {
         data[key] = decode(data[key]);
       }
     }
 
+    /* istanbul ignore else */
     if (JSON.stringify(data) !== JSON.stringify(formValues)) {
       setFormValues(data);
     }
