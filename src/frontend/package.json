@@ -14,7 +14,7 @@
   "dependencies": {
     "@atlaskit/button": "23.3.2",
     "@atlaskit/css-reset": "7.3.4",
-    "@atlaskit/form": "12.0.15",
+    "@atlaskit/form": "12.0.16",
     "@atlaskit/spinner": "19.0.1",
     "@atlaskit/textfield": "8.0.9",
     "@forge/bridge": "5.2.0",
