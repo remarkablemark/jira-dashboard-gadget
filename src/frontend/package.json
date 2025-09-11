@@ -17,7 +17,7 @@
     "@atlaskit/form": "12.6.1",
     "@atlaskit/spinner": "19.0.4",
     "@atlaskit/textfield": "8.0.11",
-    "@forge/bridge": "5.4.1",
+    "@forge/bridge": "5.5.0",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
