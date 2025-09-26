@@ -12,11 +12,11 @@
     "test:ci": "jest --ci --coverage --colors"
   },
   "dependencies": {
-    "@atlaskit/button": "23.4.9",
+    "@atlaskit/button": "23.4.10",
     "@atlaskit/css-reset": "7.3.7",
     "@atlaskit/form": "14.2.0",
     "@atlaskit/spinner": "19.0.5",
-    "@atlaskit/textfield": "8.0.11",
+    "@atlaskit/textfield": "8.0.13",
     "@forge/bridge": "5.5.0",
     "react": "18.3.1",
     "react-dom": "18.3.1"
