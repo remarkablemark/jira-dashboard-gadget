@@ -21,7 +21,7 @@
     "@commitlint/config-conventional": "20.0.0",
     "@eslint/compat": "1.4.1",
     "@forge/cli": "12.7.1",
-    "eslint": "9.39.0",
+    "eslint": "9.39.1",
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "globals": "16.5.0",
