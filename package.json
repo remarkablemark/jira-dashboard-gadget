@@ -20,7 +20,7 @@
     "@commitlint/cli": "20.3.0",
     "@commitlint/config-conventional": "20.3.0",
     "@eslint/compat": "2.0.0",
-    "@forge/cli": "12.12.0",
+    "@forge/cli": "12.13.0",
     "eslint": "9.39.2",
     "eslint-plugin-prettier": "5.5.4",
     "eslint-plugin-simple-import-sort": "12.1.1",
